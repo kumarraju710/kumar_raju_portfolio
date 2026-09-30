@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kumar Raju Bejawada - Computer Science Engineering Graduate specializing in AI, Data Science, Python Development and Machine Learning. Portfolio showcasing projects, skills and certifications." />
+  <meta name="keywords" content="Kumar Raju Bejawada, Python Developer, AI ML Developer, Machine Learning, Data Science, Web Developer, Portfolio, Computer Science Engineer" />
+  <meta name="author" content="Kumar Raju Bejawada" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kumar Raju Bejawada | AI & Data Science Portfolio" />
+  <meta property="og:description" content="Computer Science Engineering Graduate | AI & Data Science | Python Developer | Machine Learning Enthusiast" />
+  <meta property="og:type" content="website" />
+
+  <title>Kumar Raju Bejawada | AI & Data Science Portfolio</title>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2300d4a0'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='52' font-weight='bold' text-anchor='middle' fill='%230a0e1a'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated particles background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">Kumar Raju</a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#internship" class="nav-link">Internship</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <p class="hero-greeting"><span class="wave">Hello, I'm</span></p>
+        <h1 class="hero-name">Kumar Raju Bejawada</h1>
+        <h2 class="hero-role">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-intro">
+          B.Tech graduate in Computer Science Engineering (AI &amp; Data Science) with strong foundations in
+          Python, SQL, Web Development, and Machine Learning. Interested in building intelligent applications
+          and solving real-world problems using technology.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
+          <a href="#resume" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/kumar-raju-bejawada-bb6066341" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:kumarrajubejawad46@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+919010632334" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="profile-wrap">
+          <div class="profile-ring"></div>
+          <div class="profile-ring profile-ring-2"></div>
+          <div class="profile-glow"></div>
+          <div class="profile-circle">
+            <img src="assets/Kumar_raju_profile_picture.png" alt="Kumar Raju Bejawada" id="profileImg" />
+            <div class="profile-placeholder"><span>KR</span></div>
+          </div>
+          <div class="profile-status">
+            <span class="status-dot"></span> Kumar Raju Bejawada
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="floating-badge badge-2"><i class="fa-solid fa-brain"></i> AI/ML</div>
+        <div class="floating-badge badge-3"><i class="fa-solid fa-database"></i> SQL</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span class="mouse"><span class="wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-bio">
+           I am a Computer Science Engineering graduate specializing in AI & Data Science, passionate about software development and artificial intelligence. I have experience building projects using Python, SQL, web technologies, Machine Learning, NLP, and ANN. I enjoy creating practical solutions, learning new technologies, and turning ideas into impactful applications. I am looking for an opportunity to apply my skills and grow as a software developer.
+          </p>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-graduation-cap"></i> B.Tech in CSE (AI &amp; Data Science)</li>
+            <li><i class="fa-solid fa-robot"></i> Machine Learning &amp; AI enthusiast</li>
+            <li><i class="fa-solid fa-code"></i> Python &amp; Web Developer</li>
+            <li><i class="fa-solid fa-lightbulb"></i> Problem solver &amp; quick learner</li>
+          </ul>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="info-card-body">
+              <h3>Education</h3>
+              <p>Bachelor of Technology</p>
+              <p class="muted">Computer Science Engineering (AI &amp; Data Science)</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="info-card-body">
+              <h3>College</h3>
+              <p>Eluru College of Engineering and Technology</p>
+              <p class="muted">JNTUK</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="info-card-body">
+              <h3>Graduation</h3>
+              <p>2026</p>
+             
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="info-card-body">
+              <h3>CGPA</h3>
+              <p>8.25 / 10</p>
+              <p class="muted">Academic Performance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-head"><i class="fa-solid fa-laptop-code"></i><h3>Programming Languages</h3></div>
+          <div class="skill-bar"><span data-level="90"><strong>Python</strong><em>90%</em></span></div>
+          <div class="skill-bar"><span data-level="75"><strong>C</strong><em>75%</em></span></div>
+          <div class="skill-bar"><span data-level="82"><strong>SQL</strong><em>82%</em></span></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head"><i class="fa-solid fa-globe"></i><h3>Web Technologies</h3></div>
+          <div class="skill-bar"><span data-level="88"><strong>HTML</strong><em>88%</em></span></div>
+          <div class="skill-bar"><span data-level="82"><strong>CSS</strong><em>82%</em></span></div>
+          <div class="skill-bar"><span data-level="78"><strong>JavaScript</strong><em>78%</em></span></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head"><i class="fa-solid fa-brain"></i><h3>Machine Learning</h3></div>
+          <div class="skill-bar"><span data-level="85"><strong>Machine Learning</strong><em>85%</em></span></div>
+          <div class="skill-bar"><span data-level="80"><strong>Natural Language Processing</strong><em>80%</em></span></div>
+          <div class="skill-bar"><span data-level="78"><strong>Artificial Neural Networks</strong><em>78%</em></span></div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head"><i class="fa-solid fa-flask"></i><h3>Libraries</h3></div>
+          <div class="badge-group">
+            <span class="badge">NumPy</span><span class="badge">Pandas</span>
+            <span class="badge">Scikit-learn</span><span class="badge">TensorFlow</span>
+            <span class="badge">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head"><i class="fa-solid fa-database"></i><h3>Database</h3></div>
+          <div class="badge-group">
+            <span class="badge">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Tools</h3></div>
+          <div class="badge-group">
+            <span class="badge">Git</span><span class="badge">GitHub</span>
+            <span class="badge">Visual Studio Code</span><span class="badge">GitHub Copilot</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-placeholder"><i class="fa-solid fa-robot"></i><span>AI Chatbot</span></div>
+            <div class="project-overlay">
+              <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" class="project-link"><i class="fa-solid fa-eye"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AI Academic Chatbot Using NLP and ANN</h3>
+            <p>Developed an academic chatbot to automate student queries related to admission, enrollment, registration, and fee services.</p>
+            <ul class="project-features">
+              <li>NLP based query processing</li>
+              <li>ANN based intent classification</li>
+              <li>Web interface development</li>
+              <li>MySQL database integration</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>NLP</span><span>ANN</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kumarraju710/AI-Academic-Chatbot-Project" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://github.com/kumarraju710/AI-Academic-Chatbot-Project" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img">
+            <div class="project-img-placeholder"><i class="fa-solid fa-user-portfolio"></i><span>Portfolio Website</span></div>
+            <div class="project-overlay">
+              <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" class="project-link"><i class="fa-solid fa-eye"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>Developed a responsive portfolio website to showcase education, technical skills, projects, and professional information.</p>
+            <ul class="project-features">
+              <li>Fully responsive design</li>
+              <li>Dark / light theme toggle</li>
+              <li>Smooth animations &amp; particles</li>
+              <li>Looks Attractive &amp; Professional</li>
+            </ul>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" class="btn btn-sm btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERNSHIP ===== -->
+  <section class="section section-alt" id="internship">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">July 2024 — September 2024</span>
+            <h3>AI &amp; Machine Learning Virtual Internship</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> AICTE — EduSkills</p>
+            <p>Completed a virtual internship focused on Artificial Intelligence and Machine Learning concepts, data processing workflows, and practical ML applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-date">July 8 2026 — January 15 2027</span>
+            <h3>Python Full Stack Development Trainee</h3>
+            <p class="timeline-org"><i class="fa-solid fa-building"></i> Dhee Coding Lab (Bangalore)</p>
+            <p>Currently undergoing an industry-oriented Python Full Stack Development program focused on building strong foundations in software development and web application development. Gaining hands-on experience with Python programming, Object-Oriented Programming, SQL, database management, HTML, CSS, JavaScript, and backend development concepts. Working on practical coding exercises and projects to improve problem-solving skills, application development abilities, and understanding of real-world software development workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-brands fa-android"></i></div>
+          <h3>Google Android Developer Certification</h3>
+          <p class="muted">Google</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Machine Learning Certification</h3>
+          <p class="muted">ML Specialization</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+          <h3>Microsoft Office Certification</h3>
+          <p class="muted">Microsoft</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development Certification</h3>
+          <p class="muted">LinkedIn Learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="section section-alt" id="resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Resume</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="resume-card reveal">
+        <div class="resume-preview">
+          <div class="resume-head">
+            <h3>Kumar Raju Bejawada</h3>
+            <p>Computer Science Engineering Graduate | AI &amp; Data Science</p>
+            <p class="muted">kumarrajubejawad46@gmail.com | +91-9010632334</p>
+          </div>
+          <div class="resume-section">
+            <h4>Education</h4>
+            <p>B.Tech — CSE (AI &amp; Data Science), Eluru College of Engineering and Technology, JNTUK · 2026 · CGPA 8.25</p>
+          </div>
+          <div class="resume-section">
+            <h4>Skills</h4>
+            <p>Python, C, SQL, HTML, CSS, JavaScript, ML, NLP, ANN, NumPy, Pandas, Scikit-learn, TensorFlow, Streamlit, MySQL, Git, GitHub</p>
+          </div>
+          <div class="resume-section">
+            <h4>Projects</h4>
+            <p>AI Academic Chatbot (NLP + ANN) · Personal Portfolio Website</p>
+          </div>
+          <div class="resume-section">
+            <h4>Internship</h4>
+            <p>AI &amp; ML Virtual Internship — AICTE EduSkills (Jul–Sep 2024)</p>
+          </div>
+          <div class="resume-section">
+            <h4>Certifications</h4>
+            <p>Google Android Developer · Machine Learning · Microsoft Office · Web Development (LinkedIn Learning)</p>
+          </div>
+        </div>
+        <div class="resume-actions">
+          <h3>Download My Resume</h3>
+          <p class="muted">Get a complete overview of my education, skills, projects and experience.</p>
+          <a href="assets/Kumar_raju_Resume.pdf" download class="btn btn-primary btn-lg"><i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p class="muted">I'm actively looking for entry-level software developer, Python developer, AI/ML developer and web developer roles. Feel free to reach out!</p>
+
+          <a href="mailto:kumarrajubejawad46@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><p>kumarrajubejawad46@gmail.com</p></div>
+          </a>
+          <a href="tel:+919010632334" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div><span>Phone</span><p>+91-9010632334</p></div>
+          </a>
+          <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div><span>GitHub</span><p>github.com/kumarraju710</p></div>
+          </a>
+          <a href="https://linkedin.com/in/kumar-raju-bejawada-bb6066341" target="_blank" rel="noopener" class="contact-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div><span>LinkedIn</span><p>kumar-raju-bejawada</p></div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">Kumar Raju</a>
+        <p>Computer Science Engineering Graduate | AI &amp; Data Science | Python Developer</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/kumarraju710" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/kumar-raju-bejawada-bb6066341" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:kumarrajubejawad46@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+919010632334" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Kumar Raju Bejawada. All rights reserved.</p>
+        <p class="muted">Built with HTML, CSS and JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
